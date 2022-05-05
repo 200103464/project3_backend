@@ -10,7 +10,7 @@ from django.core.mail import EmailMessage
 
 def main(request):
     return render(request,'project_app/main.html')
-'''
+
 def send_message(request):
     send_mail('Web programming: back end', 'My contact', '200103464@stu.sdu.edu.kz',
               ['200103464@stu.sdu.edu.kz','200103231@stu.sdu.edu.kz'],
@@ -29,6 +29,7 @@ def send_message(request):
     email.attach_file(r'C:\Users\Nitro5\Downloads\Sultan Plaza Borovoe.jpg')
     email.send(fail_silently=False)
     return render(request, 'project_app/successfull.html')
+'''
 
 def register(request):
     if request.method =='POST':
