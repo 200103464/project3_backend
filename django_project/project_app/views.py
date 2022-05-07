@@ -26,7 +26,7 @@ def send_message(request):
 
         headers={'Message-ID': 'foo'},
     )
-    email.attach_file(r'C:\Users\Nitro5\Downloads\Sultan Plaza Borovoe.jpg')
+    
     email.send(fail_silently=False)
     return render(request, 'project_app/successfull.html')
 '''
